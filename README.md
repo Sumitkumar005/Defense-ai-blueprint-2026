@@ -147,3 +147,31 @@ For questions or contributions, please refer to individual project READMEs.
 
 **Built with ❤️ for those who serve**
 
+
+### Core relationships (Mermaid diagram)
+
+```mermaid
+erDiagram
+  SCHOOL_GROUPS ||--o{ SCHOOLS : contains
+  SCHOOLS ||--o{ STUDENTS : enrolls
+  SCHOOLS ||--o{ TEACHERS : employs
+  SCHOOLS ||--o{ PARENTS : associates
+  SCHOOLS ||--o{ SCHOOL_ADMINS : assigns
+
+  USERS ||--o{ STUDENTS : "student persona"
+  USERS ||--o{ TEACHERS : "teacher persona"
+  USERS ||--o{ PARENTS : "parent persona"
+  USERS ||--o{ SCHOOL_ADMINS : "admin persona"
+
+  PARENTS ||--o{ PARENT_STUDENT_MAPPING : links
+  STUDENTS ||--o{ PARENT_STUDENT_MAPPING : links
+
+  TEACHERS ||--o{ TEACHER_SCHOOL_MAPPING : assigned_to
+  SCHOOLS ||--o{ TEACHER_SCHOOL_MAPPING : hosts
+
+  STUDENTS ||--o{ GRADE_HISTORY : changes
+  SCHOOLS ||--o{ GRADE_HISTORY : tracks
+
+  STUDENTS ||--o{ SCHOOL_TRANSFER_HISTORY : transfers
+  SCHOOLS ||--o{ SCHOOL_TRANSFER_HISTORY : from_or_to
+```
