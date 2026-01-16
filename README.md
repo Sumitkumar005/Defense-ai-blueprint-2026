@@ -135,7 +135,7 @@ This repository is provided for educational and demonstration purposes.
 
 ## 🙏 Acknowledgments
 
-Created for developers, defense contractors, and innovators who want to make real impact in modern warfare and military operations.
+Created for developers, defense contractors,, and innovators who want to make real impact in modern warfare and military operations.
 
 ---
 
