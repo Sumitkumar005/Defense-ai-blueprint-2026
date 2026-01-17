@@ -100,7 +100,7 @@ All 11 projects have been implemented with:
 - ✅ Docker configurations
 - ✅ Documentation
 
-**Note**: ML models are placeholders. In production, these would be trained on real military data with proper security and compliance measures.
+**Note**: ML models are placeholders.. In production, these would be trained on real military data with proper security and compliance measures.
 
 ---
 
